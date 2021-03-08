@@ -12,8 +12,7 @@ document.getElementById("resetList").addEventListener("click", () => {
 });
 addTaskBtn.addEventListener("click", () => {
   // make a list item
-  const li = `<li><p>${inputField.value}</p><button class = 'itemInfoBtn'>Remove</button></li>`;
-  console.log(li);
+  const li = `<li>${inputField.value}</li>`;
 
   // add items on the list
   listOfTasks.innerHTML = listOfTasks.innerHTML + li;
@@ -38,5 +37,4 @@ inputField.addEventListener("keyup", (event) => {
 
 listOfTasks.addEventListener("click", (e) => {
   e.target.parentNode.removeChild(e.target);
-  console.log(e.target.parentNode);
 });

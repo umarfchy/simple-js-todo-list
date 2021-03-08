@@ -11,7 +11,7 @@
   flex-direction: column;
 }
 
-.addTaskBtn {
+#addTaskBtn {
   background: #000;
   font-family: "Poppins", sans-serif;
   color: white;
@@ -27,15 +27,13 @@
 }
 
 .taskShowcase > ul > li {
-  display: flex;
-  justify-content: space-between;
-  background: rgb(197, 195, 195);
-  border: 1px solid lightblue;
-  border-radius: 10px;
+  /* display: flex;
+  justify-content: left; */
+  margin: 10px 50px;
+  padding: 10px 50px;
+  cursor: pointer;
 }
 
-.taskShowcase > ul > li > p {
-  margin: 10px;
-  padding: 10px;
-  padding-left: 0px;
+.taskShowcase > ul > li:nth-child(2n + 1) {
+  background: rgba(243, 71, 8, 0.609);
 }
