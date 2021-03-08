@@ -6,14 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo List Js</title>
     <link rel="stylesheet" href="./style.css">
+    <!-- link for bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- link for fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
 </head>
 <body>
+    
     <div class="container">
-        <div class="dataInput">
+        <header>
+            <h2>My Todo List</h2>
+        </header>
+        <!-- <div class="dataInput">
             <button id="resetInputField">Reset Input Field</button>
             <input id="inputField" type="text">
             <button id="addTaskBtn"> + Add Task</button>
             <button id="resetList">Reset List</button>
+        </div> -->
+        <div class="d-flex flex-row justify-content-center align-items-center">
+            <input class="form-control" id="inputField" placeholder="Type here" type="text">
+            <button class="btn btn-dark" type="button" id="addTaskBtn"><i class="fas fa-plus-circle"></i> Add Task</button>
+            <button class="btn btn-light" id="resetList"><i class="fas fa-eraser"></i> Reset List</button>
         </div>
         <div class="taskShowcase">
             <h3>List of available tasks :-</h3>

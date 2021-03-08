@@ -1,10 +1,6 @@
 const addTaskBtn = document.getElementById("addTaskBtn");
 const inputField = document.getElementById("inputField");
 let listOfTasks = document.getElementById("listOfTasks");
-// reset input field
-document
-  .getElementById("resetInputField")
-  .addEventListener("click", () => (inputField.value = ""));
 
 //   reset task list
 document.getElementById("resetList").addEventListener("click", () => {
@@ -16,6 +12,7 @@ addTaskBtn.addEventListener("click", () => {
 
   // add items on the list
   listOfTasks.innerHTML = listOfTasks.innerHTML + li;
+  inputField.value = "";
 });
 
 // Execute a function when the user releases a key on the keyboard
@@ -27,14 +24,8 @@ inputField.addEventListener("keyup", (event) => {
   }
 });
 
-// const items = document.getElementsByTagName("li");
-// for (let i = 0; i < items.length; i++) {
-//   const item = items[i];
-//   item.addEventListener("click", (e) =>
-//     e.target.parentNode.removeChild(e.target)
-//   );
-// }
-
 listOfTasks.addEventListener("click", (e) => {
   e.target.parentNode.removeChild(e.target);
 });
+
+//Need to add event propagation to stop unwanted action

@@ -1,7 +1,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+header {
+  font-size: 1.5em;
+  margin-top: 15px;
+  color: white;
+}
+
+#inputField {
+  width: auto;
+}
+
+#addTaskBtn,
+#resetList {
+  border: none;
+  /* padding: 0.5rem; */
+  font-weight: bold;
+  margin-left: 12px;
+  height: 40px;
+}
+
+#addTaskBtn {
+  background: rgba(15, 14, 14, 0.856);
+}
+
+#addTaskBtn:focus,
+#resetList:focus {
+  outline: none;
 }
 
 .container {
@@ -9,14 +57,11 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  color: white;
 }
 
-#addTaskBtn {
-  background: #000;
-  font-family: "Poppins", sans-serif;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
+.form-control {
+  background-color: none;
 }
 
 .taskShowcase {
@@ -29,11 +74,18 @@
 .taskShowcase > ul > li {
   /* display: flex;
   justify-content: left; */
-  margin: 10px 50px;
-  padding: 10px 50px;
+  margin: 10px 200px;
+  padding: 5px 200px;
   cursor: pointer;
+  font-size: 23px;
+  list-style-type: none;
 }
 
 .taskShowcase > ul > li:nth-child(2n + 1) {
-  background: rgba(243, 71, 8, 0.609);
+  background: rgba(0, 0, 0, 0.5);
+  color: aliceblue;
+}
+.taskShowcase > ul > li:nth-child(2n) {
+  background: #fff;
+  color: black;
 }
