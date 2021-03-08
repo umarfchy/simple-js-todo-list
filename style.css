@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.addTaskBtn {
+  background: #000;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.taskShowcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.taskShowcase > ul > li {
+  display: flex;
+  justify-content: space-between;
+  background: rgb(197, 195, 195);
+  border: 1px solid lightblue;
+  border-radius: 10px;
+}
+
+.taskShowcase > ul > li > p {
+  margin: 10px;
+  padding: 10px;
+  padding-left: 0px;
+}
