@@ -6,13 +6,19 @@ let listOfTasks = document.getElementById("listOfTasks");
 document.getElementById("resetList").addEventListener("click", () => {
   document.getElementById("listOfTasks").innerHTML = "";
 });
-addTaskBtn.addEventListener("click", () => {
-  // make a list item
-  const li = `<li>${inputField.value}</li>`;
 
-  // add items on the list
-  listOfTasks.innerHTML = listOfTasks.innerHTML + li;
-  inputField.value = "";
+//add items in list
+addTaskBtn.addEventListener("click", () => {
+  if (inputField === "") {
+    alert("Cant leave input field empty!!!");
+  } else {
+    // make a list item
+    const li = `<li>${inputField.value}</li>`;
+
+    // add items on the list
+    listOfTasks.innerHTML = listOfTasks.innerHTML + li;
+    inputField.value = "";
+  }
 });
 
 // Execute a function when the user releases a key on the keyboard
