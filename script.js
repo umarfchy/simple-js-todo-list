@@ -9,7 +9,7 @@ document.getElementById("resetList").addEventListener("click", () => {
 
 //add items in list
 addTaskBtn.addEventListener("click", () => {
-  if (inputField === "") {
+  if (inputField.value === "") {
     alert("Cant leave input field empty!!!");
   } else {
     // make a list item
