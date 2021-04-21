@@ -13,9 +13,9 @@ addTaskBtn.addEventListener("click", () => {
     alert("Cant leave input field empty!!!");
   } else {
     // make a list item
-    const li = `<li><p>${
+    const li = `<li><span>${
       inputField.value
-    }</p><button onclick=${"randomF(event)"} class="btn btn-primary ms-4">Delete</button>
+    }</span><button onclick=${"randomF(event)"} class="btn btn-primary ms-4">Delete</button>
     </li>`;
     // add items on the list
     listOfTasks.innerHTML = listOfTasks.innerHTML + li;

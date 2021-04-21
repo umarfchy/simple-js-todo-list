@@ -30,13 +30,9 @@ header {
   color: white;
 }
 
-#inputField {
-}
-
 #addTaskBtn,
 #resetList {
   border: none;
-  /* padding: 0.5rem; */
   font-weight: bold;
 }
 
@@ -50,25 +46,20 @@ header {
 }
 
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  display: grid;
+  place-items: center;
   color: white;
 }
 
 .taskShowcase {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 30px;
+  display: grid;
+  place-items: center;
 }
 
 .taskShowcase > ul > li {
-  /* display: flex;
-  justify-content: left; */
-  margin: 10px 200px;
-  padding: 5px 200px;
+  width: 15rem;
+  margin: 5rem;
+  padding: 3rem;
   cursor: pointer;
   font-size: 23px;
   list-style-type: none;
