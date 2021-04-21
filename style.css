@@ -25,13 +25,12 @@ body {
 }
 
 header {
-  font-size: 1.5em;
-  margin-top: 15px;
+  font-size: 5rem;
+  margin-top: 4rem;
   color: white;
 }
 
 #inputField {
-  width: auto;
 }
 
 #addTaskBtn,
@@ -39,8 +38,6 @@ header {
   border: none;
   /* padding: 0.5rem; */
   font-weight: bold;
-  margin-left: 12px;
-  height: 40px;
 }
 
 #addTaskBtn {
@@ -58,10 +55,6 @@ header {
   justify-content: center;
   flex-direction: column;
   color: white;
-}
-
-.form-control {
-  background-color: none;
 }
 
 .taskShowcase {
