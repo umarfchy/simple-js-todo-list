@@ -26,18 +26,13 @@ body {
 
 header {
   font-size: 5rem;
-  margin-top: 4rem;
   color: white;
 }
-
+#inputField,
 #addTaskBtn,
 #resetList {
-  border: none;
-  font-weight: bold;
-}
-
-#addTaskBtn {
-  background: rgba(15, 14, 14, 0.856);
+  border-radius: 0;
+  height: 40px;
 }
 
 #addTaskBtn:focus,
@@ -45,23 +40,26 @@ header {
   outline: none;
 }
 
-.container {
+.taskShowcase {
   display: grid;
   place-items: center;
   color: white;
 }
 
-/* .taskShowcase {
+.taskShowcase {
   display: grid;
   place-items: center;
 }
 
 .taskShowcase > ul > li {
-  width: 15rem;
-  margin: 5rem;
-  padding: 3rem;
+  width: 25rem;
+  margin: 2rem;
+  padding: 0.5rem;
   cursor: pointer;
-  font-size: 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* font-size: 23px; */
   list-style-type: none;
 }
 
@@ -72,4 +70,4 @@ header {
 .taskShowcase > ul > li:nth-child(2n) {
   background: #fff;
   color: black;
-} */
+}

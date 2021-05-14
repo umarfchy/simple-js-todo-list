@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ToDo List Js</title>
+    <title>Simple Todo List</title>
     <link rel="stylesheet" href="./style.css" />
     <!-- link for bootstrap -->
     <link
@@ -24,26 +24,38 @@
   <body>
     <div class="container">
       <header>
-        <h2>My Todo List</h2>
+        <h2 class="text-center my-3">My Todo List</h2>
       </header>
-      <div>
-        <div class="row">
-          <input
-            class="form-control mb-3 col-md-6"
-            placeholder="Type here"
-            type="text"
-            id="inputField"
-          />
-          <button class="btn btn-dark mb-3" type="button" id="addTaskBtn">
+      <div class="mx-auto">
+        <div
+          class="
+            mx-auto
+            my-3
+            row
+            w-75
+            d-flex
+            justify-content-center
+            align-items-center
+          "
+        >
+          <div class="col-md-6">
+            <input
+              class="form-control"
+              placeholder="Type here"
+              type="text"
+              id="inputField"
+            />
+          </div>
+          <button class="col-md-2 mx-1 btn btn-success" id="addTaskBtn">
             <i class="fas fa-plus-circle me-1"></i> Add Task
           </button>
-          <button class="btn btn-danger mb-3" id="resetList">
+          <button class="col-md-2 mx-1 btn btn-danger" id="resetList">
             <i class="fas fa-eraser me-1"></i> Reset List
           </button>
         </div>
       </div>
       <div class="taskShowcase">
-        <h3>List of available tasks :-</h3>
+        <h3 class="my-4 text-center text-white">Available Tasks</h3>
         <ul id="listOfTasks"></ul>
       </div>
     </div>
